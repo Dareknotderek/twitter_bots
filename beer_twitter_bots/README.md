@@ -1,4 +1,4 @@
-# Beer Recommendation Twitter Bot
+# Beer Recommendation Twitter Bot (Post Only)
 This Python script is a Twitter bot that tweets random beer recommendations every six hours -- but you can adjust it to whatever you'd like. The beer styles and examples are loaded from an XML file (styleguide.xml). The bot uses the Tweepy library to interact with the Twitter API and the schedule library to manage tweet intervals.
 
 ## Features
