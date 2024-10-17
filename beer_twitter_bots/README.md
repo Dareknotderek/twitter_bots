@@ -17,8 +17,7 @@ This Python script is a Twitter bot that tweets random beer recommendations ever
 ## Installation
 Clone the repository:
 ```
-https://github.com/Dareknotderek/twitter_bots/tree/main/beer_twitter_bots
-cd beer-recommendation-bot
+https://github.com/Dareknotderek/twitter_bots/blob/main/beer_twitter_bots/beer_recommendation_post_only_v1.py
 ```
 
 Install the required Python packages:
