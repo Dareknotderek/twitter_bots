@@ -116,8 +116,11 @@ def tweet_beer_recommendation():
     Tweet a random beer recommendation.
     """
     beer_name, examples = get_random_beer()
-    examples_str = ", ".join(examples) if examples else "No examples available"
-    tweet_content = f"Try a {beer_name}! Examples include: {examples_str}. Cheers! 🍻"
+    if examples:
+        examples_str = ", ".join(examples)
+        tweet_content = f"Try a {beer_name}! Examples include: {examples_str}. Cheers! 🍻"
+    else:
+        tweet_content = f"Try a {beer_name}! Cheers! 🍻"
 
     try:
         client.create_tweet(text=tweet_content)
@@ -128,6 +131,7 @@ def tweet_beer_recommendation():
             logger.error(f"Response text: {e.response.text}")
     except Exception as e:
         logger.exception(f"Unexpected error: {e}")
+
 
 
 def main():
